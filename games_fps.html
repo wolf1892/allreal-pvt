@@ -12,14 +12,14 @@
 
 		<script type="module">
 
-			import * as THREE from '../build/three.module.js';
+			import * as THREE from 'three.module.js';
 
-			import Stats from './jsm/libs/stats.module.js';
+			import Stats from 'stats.module.js';
 
-			import { GLTFLoader } from './jsm/loaders/GLTFLoader.js';
+			import { GLTFLoader } from 'GLTFLoader.js';
 
-			import { Octree } from './jsm/math/Octree.js';
-			import { Capsule } from './jsm/math/Capsule.js';
+			import { Octree } from 'Octree.js';
+			import { Capsule } from 'Capsule.js';
 
 
 			const clock = new THREE.Clock();
@@ -335,8 +335,8 @@
 
 			}
 
-			const loader = new GLTFLoader().setPath( './models/gltf/' );
-			import { DRACOLoader } from './jsm/loaders/DRACOLoader.js';
+			const loader = new GLTFLoader().setPath( 'models/gltf/' );
+			import { DRACOLoader } from 'DRACOLoader.js';
 			const dracoLoader = new DRACOLoader();
 			dracoLoader.setDecoderPath( 'decoder/' );
 			loader.setDRACOLoader( dracoLoader );
